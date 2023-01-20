@@ -1,51 +1,44 @@
-.cuerpo{
-    width: 960px;
-    height: 800px;
-    background: #E5E5E5;
-    margin: auto;
-}
-
 .cabecera{
-    width: 100%;
-    height: 15%;
+    width: 960px;
+    margin: auto;
     background: #E5E5E5;
+    padding: 10px 0;
 }
 
 .logo-cabecera{
-    margin-top: 5%;
-    margin-left: 4%
+    margin-top: 1%;
+    margin-left: 5%
 }
 
 .titulo-cabecera{
     position: absolute;
-    top: 50px;
-    right: 45%;
+    top: 40px;
+    right: 40%;
     color: #0A3871;
     font-weight: bold;
     font-size: 30px;    
 }
 
-.left{
-    width: 65%;
-    height: 80%;
+.cuerpo{
+    width: 960px;
+    height: 540px;
+    margin: auto;
     background: #E5E5E5;
-    float: left;
+    
 }
 
 .cuerpo-texto{
-    width: 100%;
-    height: 85%;
-    background: #E5E5E5;
-}
-.cuerpo-botones{
-    width: 100%;
-    height: 15%;
+    float: left;
+    width: 65%;
+    height: 100%;
     background: #E5E5E5;
 }
 
 #texto{
-    margin-top: 12px;
-    margin-left: 70px;
+    height: 35em;
+    width: 95%;
+    margin-left: 10px;
+    margin-top: 4px;
     background: #E5E5E5;
     border-top-right-radius: 15px;
     border-bottom-left-radius: 15px;
@@ -66,51 +59,6 @@
     color: #0A3871;
     font-weight: bold;
     font-size: 12px;
-}
-
-.right{
-    width: 33%;
-    height: 80%;
-    background: #FFFFFF;
-    float: right;
-    border-radius: 15px;
-    margin-right: 5px;
-    }
-
-.texto-salida{
-    background: #FFFFFF;
-    margin-top: 13px;
-    margin-left: 12px;
-    margin-right: 12px;
-    height: 83%;
-    border-bottom-left-radius: 15px;
-    border: none;
-    overflow-y: scroll;
-    color: #0A3871;
-}
-
-#logo-salida{
-    width: 85%;
-    margin-top: 80px;
-    margin-left: 20px;
-}
-
-#texto1-salida{
-    font-size: 30px;
-    font-weight: bold;
-    color: #0A3871;
-    text-align: center;
-}
-
-#texto2-salida{
-    font-size: 15px;
-    font-weight: bold;
-    color: #0A3871;
-    text-align: center;
-}
-
-.cuerpo-botones{
-    background: #E5E5E5;
 }
 
 #Encriptar{
@@ -147,10 +95,47 @@
     border-color: #0A3871; 
 }
 
-.cuerpo-copiar{
-    background: E5E5E5;
-    height: 15%;
+.right{
+    float: right;
+    width: 34%;
+    height: 98%;
+    background: #FFFFFF;
+    margin-right: 8px;
+    border-radius: 15px;
 }
+
+.texto-salida{
+    background: #FFFFFF;
+    margin-top: 13px;
+    margin-left: 12px;
+    margin-right: 12px;
+    height: 83%;
+    border-bottom-left-radius: 15px;
+    border: none;
+    overflow-y: scroll;
+    color: #0A3871;
+}
+
+#logo-salida{
+    width: 80%;
+    margin-top: 80px;
+    margin-left: 20px;
+}
+
+#texto1-salida{
+    font-size: 30px;
+    font-weight: bold;
+    color: #0A3871;
+    text-align: center;
+}
+
+#texto2-salida{
+    font-size: 15px;
+    font-weight: bold;
+    color: #0A3871;
+    text-align: center;
+}
+
 #copiar{
     width: 220px;
     height: 50px;
@@ -164,14 +149,10 @@
     cursor: pointer;
 }
 
-#copiar:hover{
-    transform: scale(1.2);
-    border-color: #0A3871; 
-}
-
 .foot{
     background: #E5E5E5;
-    width: 960px;    
+    width: 960px; 
+    height: 20px;   
     margin: auto;
 }
 
@@ -182,3 +163,78 @@
     font-size: 12px;
 }
 
+
+@media screen and (max-width: 480px){
+
+    body{
+        background: #E5E5E5;
+    }
+
+    .cabecera {
+        width: auto;
+        margin: auto;
+        padding: 20px 0;
+    }
+
+    .titulo-cabecera{
+        position: absolute;
+        top: 40px;
+        right: 15%;
+        font-size: 20px;
+    }
+
+    .cuerpo{
+        width: auto;
+    }
+
+    .cuerpo-texto, .cuerpo-botones{
+        width:100%;
+    }
+
+    #texto{
+        height: 30em;
+        width: 27em;
+        margin-left: 10px;
+        margin-top: 4px;
+    }
+
+    #Encriptar, #Desencriptar{
+        width: 90%;
+        margin-left: 10px;
+    }
+    .right{
+        float: left;
+        height:200px;
+        width: 100%;
+        background: #E5E5E5;
+    }
+
+    .texto-salida{
+        border-radius: 2px;
+    }
+
+    #logo-salida{
+        visibility: hidden;
+        height: 0px;
+        margin: 0;
+    }
+
+    #texto1-salida{
+        font-size: 30px;
+        margin: auto;
+        display:flex;
+        position:relative;       
+    }
+    
+    #texto2-salida{
+        font-size: 15px;
+        margin: auto;
+        display:flex;
+        position:relative; 
+    }
+
+    .cuerpo-copiar{
+        background: #E5E5E5; 
+    }
+
+}

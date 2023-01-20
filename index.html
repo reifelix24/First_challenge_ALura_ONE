@@ -1,61 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="styles.css">
-    
-    <title>Encriptardo de mesajes</title>
-</head>
-<body>
-    <div class="cuerpo">
+<html lang="es">
 
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="styles.css">     
+        <title>Encriptardo de mesajes</title>
+
+    </head>
+
+    <body>
+        
         <div class="cabecera">
             
-            <h1><img src="imagenes/logo.png" alt="" class="logo-cabecera"></h1>
+            <img src="imagenes/logo.png" alt="" class="logo-cabecera">
             <h3 class="titulo-cabecera">Encriptador de mensajes</h3>
 
         </div>
 
-        <div class="left">
+        <div class="cuerpo">
 
             <div class="cuerpo-texto">
-                <textarea  id="texto" cols="70" rows="35" placeholder="Ingresar el texto aquí" 
+                <textarea  id="texto" placeholder="Ingresar el texto aquí" 
                 onkeypress="return ((event.charCode >= 48 && event.charCode <= 57) || (event.charCode == 32) || (event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122))"></textarea> 
                 <h6><img src="imagenes/bi_exclamation-circle-fill.png" alt="" id="logo-texto"></h6>
                 <h6 id="pie-texto">Solo letras minúsculas y sin acentos</h6>
-            </div>
 
-            <div class="cuerpo-botones">
                 <button value="encriptador()" id="Encriptar">Encriptar</button>
                 <button value="desencriptador()" id="Desencriptar">Desencriptar</button>
-            </div>
-            
-        </div>
+            </div>            
 
-        <div class="right">
+            <div class="right">
 
-            <div id="salida" class="texto-salida">
-                <img src="imagenes/Muñeco.png" alt="" id="logo-salida">
-                <h4 id="texto1-salida">Ningún mensaje fue encontrado</h4>
-                <br>
-                 <h5 id="texto2-salida">Ingresa el texto que desees encriptar o desencriptar.</h5>
-            </div>
-
-            <div class="cuerpo-copiar">
-                <button id="copiar">Copiar</button>
-            </div>           
-
-        </div>
-      
-        <script src="script.js"></script>
-    </div>
-    <div class="foot">
-        <h3 id="texto-foot">	
-            &copy; Copyright Felix Bernabe</h3>
-    </div>
+                <div id="salida" class="texto-salida">
+                    <img src="imagenes/Muñeco.png" alt="" id="logo-salida">
+                    <h4 id="texto1-salida">Ningún mensaje fue encontrado</h4>
+                    <br>
+                     <h5 id="texto2-salida">Ingresa el texto que desees encriptar o desencriptar.</h5>
+                </div>
     
-</body>
-</html>
+                <div class="cuerpo-copiar">
+                    <button id="copiar">Copiar</button>
+                </div>           
+    
+            </div>
 
+            <script src="script.js"></script>            
+
+        </div> 
+        <div class="foot">
+            <h3 id="texto-foot">    
+                &copy; Copyright Felix Bernabe</h3>
+        </div>
+        
+    </body>
+</html>
