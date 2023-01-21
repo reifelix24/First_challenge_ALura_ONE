@@ -237,4 +237,10 @@
         background: #E5E5E5; 
     }
 
+    .foot{
+        width: 100%;
+        position: absolute;
+        margin-top: 19em;
+    }
+
 }

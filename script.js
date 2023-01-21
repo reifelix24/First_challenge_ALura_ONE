@@ -58,8 +58,9 @@ function copiarAlPortapapeles() {
      document.body.removeChild(inputFalso);
      //alert("Copiado al portapapeles!");
 
-     let refresh = document.getElementById('copiar');
-     copiar.addEventListener('click', _ => {location.reload();})
+     let refresh = document.getElementById('copiar');     
+     alert("Texto copiado");
+     copiar.addEventListener('click', _ => {location.reload();});
 
      //document.getElementById("salida").innerHTML= " ";
  }
