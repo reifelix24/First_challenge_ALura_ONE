@@ -164,7 +164,7 @@
 }
 
 
-@media screen and (max-width: 480px){
+@media screen and (max-width: 600px){
 
     body{
         background: #E5E5E5;
@@ -230,7 +230,8 @@
         font-size: 15px;
         margin: auto;
         display:flex;
-        position:relative; 
+        position:relative;
+        text-align: center; 
     }
 
     .cuerpo-copiar{

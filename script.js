@@ -5,7 +5,16 @@
  /*función que permite encriptar el texto capturado del input*/
  function encriptador(){
 
-     var textoEntradoEncriptar = document.getElementById("texto").value.toLowerCase();
+     var cadena = document.getElementById("texto").value.toLowerCase();
+
+     var textoMinuscula = cadena.replace(/[àáâãäå]/img,'a');
+     textoMinuscula = textoMinuscula.replace(/[èéêë]/img,'e');
+     textoMinuscula = textoMinuscula.replace(/[ìíîï]/img,'i');
+     textoMinuscula = textoMinuscula.replace(/[òóôõö]/img, 'o');
+     textoMinuscula = textoMinuscula.replace(/[ùúûü]/img,'u');
+     textoMinuscula = textoMinuscula.replace(/[ýÿ]/img,'y');
+
+     var textoEntradoEncriptar = textoMinuscula;
 
      var textoCifrado = textoEntradoEncriptar.replace(/e/img,'enter');
      textoCifrado = textoCifrado.replace(/o/img,'ober');
